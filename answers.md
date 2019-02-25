@@ -1,3 +1,4 @@
+PART 1
 EX:
 const img = document.querySelector('.profile-image');
 img.src = 'https://placebear.com/300/300';
@@ -50,3 +51,27 @@ field6.disabled = true;
 14. const location1 = document.querySelectorAll('.bio-info-value');
 location1[1].innerText = 'Undisclosed';
 location1[2].innerText = 'Redacted';
+
+PART 2
+1. const time1 = document.querySelector('.bar-default');
+time1[2].remove();
+
+1. const pik = document.querySelector('#right-image img');
+const portcont = document.querySelector('.portfolio-container');
+portcont.appendChild(pik.cloneNode());
+
+2. const pik = document.querySelector('#right-image img');
+const portcont = document.querySelector('.portfolio-container');
+for (let i = 0; i < 10; i++) {
+  portcont.appendChild(pik.cloneNode());
+}
+
+3. const container1 = document.querySelector('.bio-info');
+const container2 = document.createElement('li');
+container2.classList.add('bio-info-item');
+container2.innerHTML = '<span class="bio-info-title">Update</span>';
+const container3 = document.createElement('span');
+container3.classList.add('bio-info-value bio-info-phone');
+container3.innerText = Dec 25, 2008;
+container1.appendChild(container2);
+container2.appendChild(container3);
